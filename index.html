@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+    <!-- tailwind elements package -->
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap"
+    rel="stylesheet" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css" />
+  <script src="https://cdn.tailwindcss.com/3.3.0"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        fontFamily: {
+          sans: ["Roboto", "sans-serif"],
+          body: ["Roboto", "sans-serif"],
+          mono: ["ui-monospace", "monospace"],
+        },
+      },
+      corePlugins: {
+        preflight: false,
+      },
+    };
+  </script>
+        <style>
+            /* Custom Scrollbar Styles */
+            ::-webkit-scrollbar {
+                width: 4px; /* Width of the vertical scrollbar */
+            }
+    
+            ::-webkit-scrollbar-track {
+                background: #f1f1f1; /* Color of the track */
+            }
+    
+            ::-webkit-scrollbar-thumb {
+                background: #e2e2e2; /* Color of the thumb */
+                border-radius: 3px; /* Rounding the corners of the thumb */
+            }
+        </style>
+</head>
+
+<body class="bg-gray-50">
+
+    <div  class="flex items-start justify-start ">
+         <!-- Dashboard satrt -->
+    <div class="w-2/12 px-1 bg-white shadow-md h-screen overflow-y-scroll sticky top-0 z-50">
+        <div class="flex items-center justify-start mt-2 mb-8 px-5 ">
+            <img class="w-10 rounded-xl" src="logo.PNG" alt="">
+            <h1 class="pl-2 text-xl font-sans text-black">Kajyian</h1>
+        </div>
+        <h2 class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-base font-sans   text-gray-500"><i class="mr-2 fa-regular fa-envelope-open"></i> <a href="#">Dashboards</a></h2> 
+        <h3 class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-base font-sans  text-gray-500 "><i class="mr-2 fa-brands fa-windows"></i> <a href="#">Operation</a></h3> 
+        <ul>
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-tv"></i> <a href="#">Sessions</a> <i class="fa-solid fa-angle-right"></i></li> 
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-regular fa-calendar"></i> <a href="#">Schedule</a></li> 
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-tablet-screen-button"></i> <a href="#">Trials</a></li> 
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-chalkboard"></i> <a href="https://turkyyassin.github.io/Courses/">Courses</a></li> 
+        </ul>
+        <h3 class="ml-2 mr-2 mb-4 px-3 text-base font-medium text-gray-500">Performance</h3>
+        <ul>
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-handshake"></i> <a href="#">Compensation</a></li> 
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-chart-line"></i> <a href="#">Performance</a></li> 
+        </ul>
+        <h3 class="ml-2 mr-2 mb-4 px-3 text-base font-sans font-medium text-gray-500 ">Sales</h3>
+        <ul>
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-headset"></i> <a href="https://turkyyassin.github.io/page-1/">Leads</a></li> 
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-ban"></i> <a href="#">Suspended</a></li> 
+        </ul>
+        <h3 class="ml-2 mr-2 mb-4 px-3  text-base font-sans font-medium text-gray-500 ">Students</h3>
+        <ul>
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-list-ul"></i> <a href="https://turkyyassin.github.io/Student-List/">Student List</a></li> 
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-plus"></i> <a href="#">Add New</a></li> 
+        </ul>
+        <h3 class="ml-2 mr-2 mb-4 px-3  text-base font-sans font-medium text-gray-500 ">Tutors</h3>
+        <ul>
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-list-ul"></i> <a href="https://turkyyassin.github.io/Tutors-Lists/">Tuors List</a></li> 
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-regular fa-calendar"></i> <a href="#">Tuors Schedule</a></li> 
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-plus"></i> <a href="#">Add Tuors</a></li> 
+        </ul>
+        <h3 class="ml-2 mr-2 mb-4 px-3  text-base font-sans font-medium text-gray-500">Support</h3>
+        <ul>
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-list-ul"></i> <a href="#">Agent List</a></li> 
+        </ul>
+        <h3 class="ml-2 mr-2 mb-4 px-3  text-base font-sans font-medium text-gray-500 ">Financial</h3>
+        <ul>
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-regular fa-credit-card"></i> <a href="#">Tutors Payments</a></li> 
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-credit-card"></i> <a href="#">Students Payments</a> </li >
+        </ul>
+        <h3 class="ml-2 mr-2 mb-4 px-3  text-base font-sans font-medium text-gray-500 ">Administarmrtion</h3>
+        <ul>
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-brands fa-critical-role"></i> <a href="#">Roles</a></li> 
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-circle-exclamation"></i> <a href="#">Definitions</a></li> 
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-regular fa-comment"></i> <a href="#">Chat</a></li> 
+            <li class="transition-all rounded-xl hover:bg-gray-100 active:bg-blue-600 active:text-white py-2 ml-2 mr-2 mb-4 px-3 text-basetext-gray-500"><i class="mr-2 fa-solid fa-list-check"></i> <a href="#">Tasks</a></li> 
+        </ul>
+    </div>
+    <!-- dashboard END -->
+
+    <!-- Righ Sec Start -->
+    <div class="w-10/12">
+        <!-- Search Start -->
+        <div class="flex justify-between items-center p-4 bg-white sticky top-0 z-50 border-b-2">
+            <div class="flex items-center">
+                <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M16.8 11.1a5.7 5.7 0 10-11.4 0 5.7 5.7 0 0011.4 0z"></path></svg>
+                <input class="ml-2 p-2 w-24 border-none focus:outline-none" type="text" placeholder="Search">
+                <kbd class="ml-2 p-1 border rounded">⌘K</kbd>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="text-gray-500 text-2xl"><i class="fa-solid fa-language"></i></button>
+                <button class="text-gray-500  text-2xl">☀</button>
+                <button class="text-gray-500"><i class="fa-solid fa-table-cells-large"></i></button>
+                <button class="relative text-gray-500">
+                    <i class="fa-regular fa-bell"></i>
+                    <span class="absolute top-0 right-0 inline-flex items-center justify-center px-1 py-1 text-xs font-bold leading-none rounded-full">•</span>
+                </button>
+                <a href="#"><img class="w-10 h-10 rounded-full" src="child.jpg" alt="Profile Picture"></a>
+            </div>
+        </div>
+        <!-- search END -->
+
+        <div class="my-3 mx-8 bg-white rounded shadow-lg border-4 border-gray-100 border-solid">
+            <nav class="text-gray-600 pl-4 bg-gray-100">
+                <span class=" text-sm">Sessions</span> &gt;
+                <span class="text-blue-500 text-sm">Operations</span> &gt;
+                <span class="text-blue-500 text-sm">Upcoming Sessions</span>
+            </nav>
+        
+            <!-- Filters Section -->
+            <div class="bg-white px-4 py-2 mb-1 border-b-8">
+                <div class="flex justify-start items-center mb-2 border-b-2 pb-2">
+                    <div><button class="px-4 py-4 mr-10 border-2 hover:bg-blue-500 hover:text-white transition-all text-black rounded text-sm font-sans text-gray-500">Total Sessions</button></div>
+                    <div>
+                        <div>                    
+                            <button class="mb-1 px-5 py-1 mr-4 text-sm bg-blue-200 text-blue-600 rounded text-base font-sans text-gray-500">Cancel Student 12</button>
+                            <button class="mb-1 px-5 py-1 mr-4 text-sm bg-orange-100 text-orange-300 rounded text-base font-sans text-gray-500">Absent Teacher 13</button>
+                            <button class="mb-1 px-5 py-1 mr-4 text-sm bg-blue-100 text-blue-900 rounded text-base font-sans text-gray-500">Absent Student 13</button>
+                            <button class="mb-1 px-6 py-1 mr-9 text-sm bg-red-200 text-red-800 rounded text-base font-sans text-gray-500">Rescheduled</button>
+                            <button class="mb-1 px-8 py-1 text-sm bg-red-500 transition-all hover:bg-blue-500 text-white rounded text-base font-sans text-gray-500">Waiting</button>
+                    </div>
+                    <div>
+                            <button class="px-5 py-1 mr-4 text-sm bg-gray-300 text-black rounded text-base font-sans   text-gray-500">Cancel Teacher 20</button>
+                            <button class="px-6 py-1 mr-4 text-sm bg-green-200 text-green-600 rounded text-base font-sans text-gray-500">compensated 17</button>
+                            <button class="px-7 py-1 mr-4 text-sm bg-green-200 text-green-600 rounded text-base font-sans text-gray-500">Compensations</button>
+                            <button class="px-16 py-3 text-sm mr-10 bg-red-300 text-red-900 rounded text-base font-sans text-gray-500"></button>
+                            <button class="px-5 py-1 text-sm bg-blue-500 transition-all hover:bg-yellow-500 text-white rounded text-base font-sans text-gray-500">Add Leads</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="mt-1 flex justify-between">
+                    <button class="bg-white border border-gray-300 text-gray-600 px-4 py-1 text-sm rounded">Show</button>
+                    <div class="flex space-x-4">
+                        <button class="bg-white border border-gray-300 text-gray-600 px-4 py-1 text-sm rounded">Select Dates</button>
+                        <button class="bg-white border border-gray-300 text-gray-600 px-4 py-1 text-sm rounded">Select Course</button>
+                        <button class="bg-white border border-gray-300 text-gray-600 px-4 py-1 text-sm rounded">Select Payment</button>
+                        <button class="bg-white border border-gray-300 text-gray-600 px-4 py-1 text-sm rounded">Select Status</button>
+                    </div>
+                    <input type="text" placeholder="Search..." class="border border-gray-300 px-4 py-1 rounded">
+                </div>
+            </div>
+            <div class="">
+                <table class="min-w-full text-left text-sm">
+                    <thead class="border-b-4">
+                        <tr>
+                            <th class="px-6 py-2 font-semibold">Name</th>
+                            <th class="px-6 py-2 font-semibold">Date</th>
+                            <th class="px-6 py-2 font-semibold">Time</th>
+                            <th class="px-6 py-2 font-semibold">Agent</th>
+                            <th class="px-6 py-2 font-semibold">Lesson</th>
+                            <th class="px-6 py-2 font-semibold">Statue</th>
+                            <th class="px-6 py-2 font-semibold">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Row 1 -->
+                         <div>
+                            <tr class="border-b">
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <span class="bg-green-500 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="bg-gray-300 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Sun 05 Jun 2022</div>
+                                    <div>Sun 05 Jun 2022</div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Am 10.30</div>
+                                    <div>Am 10.30</div>
+                                </td>
+                                <td class="px-3 py-1 whitespace-nowrap"><div class="border-2 border-blue-300 rounded text-center  px-1 py-1">Reham Hagar</div></td>
+                                <td class="px-3 py-1 whitespace-nowrap">
+                                    <span class="bg-blue-200 text-blue-600 py-1 px-6 rounded"></span>
+                                    <span class="text-xl">|</span>
+                                    <button><a href="#"><i class="fa-solid fa-video text-white bg-blue-500 px-2 py-1 rounded-md"></i></a></button>
+                                </td>
+                                <td class="px-4 py-1 whitespace-nowrap">
+                                    <span class="bg-green-100 text-green-300 py-1 px-8 rounded">Attended</span>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <a href="#"><i class="fa-solid fa-ellipsis-vertical text-gray-600 pr-3"></i></a>
+                                    <button class="bg-blue-500 text-white py-1 px-2 transition-all hover:bg-yellow-500 rounded-full">+</button>
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <span class="bg-white border-2 border-gray-500 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="bg-green-500 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Sun 05 Jun 2022</div>
+                                    <div>Sun 05 Jun 2022</div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Am 10.30</div>
+                                    <div>Am 10.30</div>
+                                </td>
+                                <td class="px-3 py-1 whitespace-nowrap"><div class="border-2 border-blue-300 rounded text-center  px-1 py-1">Hagar Hagar</div></td>
+                                <td class="px-3 py-1 whitespace-nowrap">
+                                    <span class="bg-red-100 text-blue-600 py-1 px-6 rounded"></span>
+                                    <span class="text-xl">|</span>
+                                    <button><a href="#"><i class="fa-solid fa-video text-white bg-blue-500 px-2 py-1 rounded-md"></i></a></button>
+                                </td>
+                                <td class="px-4 py-1 whitespace-nowrap">
+                                    <span class="bg-red-100 text-red-300 py-1 px-1 rounded">Cancel Student 12</span>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <a href="#"><i class="fa-solid fa-ellipsis-vertical text-gray-600 pr-3"></i></a>
+                                    <button class="bg-blue-500 text-white py-1 px-2 transition-all hover:bg-yellow-500 rounded-full">+</button>
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <span class="bg-gray-300 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="bg-green-500 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Sun 05 Jun 2022</div>
+                                    <div>Sun 05 Jun 2022</div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Am 10.30</div>
+                                    <div>Am 10.30</div>
+                                </td>
+                                <td class="px-3 py-1 whitespace-nowrap"><div class="border-2 border-blue-300 rounded text-center  px-1 py-1">Sara Hagar</div></td>
+                                <td class="px-3 py-1 whitespace-nowrap">
+                                    <span class="bg-purple-200 text-purple-600 py-1 px-6 rounded"></span>
+                                    <span class="text-xl">|</span>
+                                    <button><a href="#"><i class="fa-solid fa-video text-white bg-blue-500 px-2 py-1 rounded-md"></i></a></button>
+                                </td>
+                                <td class="px-4 py-1 whitespace-nowrap">
+                                    <span class="bg-purple-100 text-blue-300 py-1 px-1 rounded">Absent Teacher 13</span>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <a href="#"><i class="fa-solid fa-ellipsis-vertical text-gray-600 pr-3"></i></a>
+                                    <button class="bg-blue-500 text-white py-1 px-2 transition-all hover:bg-yellow-500 rounded-full">+</button>
+                                </td>
+                            </tr>
+                            
+                         </div>
+                         <div>
+                            <tr class="border-b">
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <span class="bg-green-500 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="bg-gray-300 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Sun 05 Jun 2022</div>
+                                    <div>Sun 05 Jun 2022</div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Am 10.30</div>
+                                    <div>Am 10.30</div>
+                                </td>
+                                <td class="px-3 py-1 whitespace-nowrap"><div class="border-2 border-blue-300 rounded text-center  px-1 py-1">Reham Hagar</div></td>
+                                <td class="px-3 py-1 whitespace-nowrap">
+                                    <span class="bg-blue-200 text-blue-600 py-1 px-6 rounded"></span>
+                                    <span class="text-xl">|</span>
+                                    <button><a href="#"><i class="fa-solid fa-video text-white bg-blue-500 px-2 py-1 rounded-md"></i></a></button>
+                                </td>
+                                <td class="px-4 py-1 whitespace-nowrap">
+                                    <span class="bg-green-100 text-green-300 py-1 px-8 rounded">Attended</span>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <a href="#"><i class="fa-solid fa-ellipsis-vertical text-gray-600 pr-3"></i></a>
+                                    <button class="bg-blue-500 text-white py-1 px-2 transition-all hover:bg-yellow-500 rounded-full">+</button>
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <span class="bg-white border-2 border-gray-500 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="bg-green-500 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Sun 05 Jun 2022</div>
+                                    <div>Sun 05 Jun 2022</div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Am 10.30</div>
+                                    <div>Am 10.30</div>
+                                </td>
+                                <td class="px-3 py-1 whitespace-nowrap"><div class="border-2 border-blue-300 rounded text-center  px-1 py-1">Hagar Hagar</div></td>
+                                <td class="px-3 py-1 whitespace-nowrap">
+                                    <span class="bg-red-100 text-blue-600 py-1 px-6 rounded"></span>
+                                    <span class="text-xl">|</span>
+                                    <button><a href="#"><i class="fa-solid fa-video text-white bg-blue-500 px-2 py-1 rounded-md"></i></a></button>
+                                </td>
+                                <td class="px-4 py-1 whitespace-nowrap">
+                                    <span class="bg-red-100 text-red-300 py-1 px-1 rounded">Cancel Student 12</span>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <a href="#"><i class="fa-solid fa-ellipsis-vertical text-gray-600 pr-3"></i></a>
+                                    <button class="bg-blue-500 text-white py-1 px-2 transition-all hover:bg-yellow-500 rounded-full">+</button>
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <span class="bg-gray-300 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="bg-green-500 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Sun 05 Jun 2022</div>
+                                    <div>Sun 05 Jun 2022</div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Am 10.30</div>
+                                    <div>Am 10.30</div>
+                                </td>
+                                <td class="px-3 py-1 whitespace-nowrap"><div class="border-2 border-blue-300 rounded text-center  px-1 py-1">Sara Hagar</div></td>
+                                <td class="px-3 py-1 whitespace-nowrap">
+                                    <span class="bg-purple-200 text-purple-600 py-1 px-6 rounded"></span>
+                                    <span class="text-xl">|</span>
+                                    <button><a href="#"><i class="fa-solid fa-video text-white bg-blue-500 px-2 py-1 rounded-md"></i></a></button>
+                                </td>
+                                <td class="px-4 py-1 whitespace-nowrap">
+                                    <span class="bg-purple-100 text-blue-300 py-1 px-1 rounded">Absent Teacher 13</span>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <a href="#"><i class="fa-solid fa-ellipsis-vertical text-gray-600 pr-3"></i></a>
+                                    <button class="bg-blue-500 text-white py-1 px-2 transition-all hover:bg-yellow-500 rounded-full">+</button>
+                                </td>
+                            </tr>
+                            
+                         </div>
+                         <div>
+                            <tr class="border-b">
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <span class="bg-green-500 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="bg-gray-300 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Sun 05 Jun 2022</div>
+                                    <div>Sun 05 Jun 2022</div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Am 10.30</div>
+                                    <div>Am 10.30</div>
+                                </td>
+                                <td class="px-3 py-1 whitespace-nowrap"><div class="border-2 border-blue-300 rounded text-center  px-1 py-1">Reham Hagar</div></td>
+                                <td class="px-3 py-1 whitespace-nowrap">
+                                    <span class="bg-blue-200 text-blue-600 py-1 px-6 rounded"></span>
+                                    <span class="text-xl">|</span>
+                                    <button><a href="#"><i class="fa-solid fa-video text-white bg-blue-500 px-2 py-1 rounded-md"></i></a></button>
+                                </td>
+                                <td class="px-4 py-1 whitespace-nowrap">
+                                    <span class="bg-green-100 text-green-300 py-1 px-8 rounded">Attended</span>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <a href="#"><i class="fa-solid fa-ellipsis-vertical text-gray-600 pr-3"></i></a>
+                                    <button class="bg-blue-500 text-white py-1 px-2 transition-all hover:bg-yellow-500 rounded-full">+</button>
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <span class="bg-white border-2 border-gray-500 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="bg-green-500 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Sun 05 Jun 2022</div>
+                                    <div>Sun 05 Jun 2022</div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Am 10.30</div>
+                                    <div>Am 10.30</div>
+                                </td>
+                                <td class="px-3 py-1 whitespace-nowrap"><div class="border-2 border-blue-300 rounded text-center  px-1 py-1">Hagar Hagar</div></td>
+                                <td class="px-3 py-1 whitespace-nowrap">
+                                    <span class="bg-red-100 text-blue-600 py-1 px-6 rounded"></span>
+                                    <span class="text-xl">|</span>
+                                    <button><a href="#"><i class="fa-solid fa-video text-white bg-blue-500 px-2 py-1 rounded-md"></i></a></button>
+                                </td>
+                                <td class="px-4 py-1 whitespace-nowrap">
+                                    <span class="bg-red-100 text-red-300 py-1 px-1 rounded">Cancel Student 12</span>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <a href="#"><i class="fa-solid fa-ellipsis-vertical text-gray-600 pr-3"></i></a>
+                                    <button class="bg-blue-500 text-white py-1 px-2 transition-all hover:bg-yellow-500 rounded-full">+</button>
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <span class="bg-gray-300 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="bg-green-500 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Sun 05 Jun 2022</div>
+                                    <div>Sun 05 Jun 2022</div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Am 10.30</div>
+                                    <div>Am 10.30</div>
+                                </td>
+                                <td class="px-3 py-1 whitespace-nowrap"><div class="border-2 border-blue-300 rounded text-center  px-1 py-1">Sara Hagar</div></td>
+                                <td class="px-3 py-1 whitespace-nowrap">
+                                    <span class="bg-purple-200 text-purple-600 py-1 px-6 rounded"></span>
+                                    <span class="text-xl">|</span>
+                                    <button><a href="#"><i class="fa-solid fa-video text-white bg-blue-500 px-2 py-1 rounded-md"></i></a></button>
+                                </td>
+                                <td class="px-4 py-1 whitespace-nowrap">
+                                    <span class="bg-purple-100 text-blue-300 py-1 px-1 rounded">Absent Teacher 13</span>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <a href="#"><i class="fa-solid fa-ellipsis-vertical text-gray-600 pr-3"></i></a>
+                                    <button class="bg-blue-500 text-white py-1 px-2 transition-all hover:bg-yellow-500 rounded-full">+</button>
+                                </td>
+                            </tr>
+                            
+                         </div>
+                         <div>
+                            <tr class="border-b">
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <span class="bg-green-500 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="bg-gray-300 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Sun 05 Jun 2022</div>
+                                    <div>Sun 05 Jun 2022</div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Am 10.30</div>
+                                    <div>Am 10.30</div>
+                                </td>
+                                <td class="px-3 py-1 whitespace-nowrap"><div class="border-2 border-blue-300 rounded text-center  px-1 py-1">Reham Hagar</div></td>
+                                <td class="px-3 py-1 whitespace-nowrap">
+                                    <span class="bg-blue-200 text-blue-600 py-1 px-6 rounded"></span>
+                                    <span class="text-xl">|</span>
+                                    <button><a href="#"><i class="fa-solid fa-video text-white bg-blue-500 px-2 py-1 rounded-md"></i></a></button>
+                                </td>
+                                <td class="px-4 py-1 whitespace-nowrap">
+                                    <span class="bg-green-100 text-green-300 py-1 px-8 rounded">Attended</span>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <a href="#"><i class="fa-solid fa-ellipsis-vertical text-gray-600 pr-3"></i></a>
+                                    <button class="bg-blue-500 text-white py-1 px-2 transition-all hover:bg-yellow-500 rounded-full">+</button>
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <span class="bg-white border-2 border-gray-500 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="bg-green-500 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Sun 05 Jun 2022</div>
+                                    <div>Sun 05 Jun 2022</div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Am 10.30</div>
+                                    <div>Am 10.30</div>
+                                </td>
+                                <td class="px-3 py-1 whitespace-nowrap"><div class="border-2 border-blue-300 rounded text-center  px-1 py-1">Hagar Hagar</div></td>
+                                <td class="px-3 py-1 whitespace-nowrap">
+                                    <span class="bg-red-100 text-blue-600 py-1 px-6 rounded"></span>
+                                    <span class="text-xl">|</span>
+                                    <button><a href="#"><i class="fa-solid fa-video text-white bg-blue-500 px-2 py-1 rounded-md"></i></a></button>
+                                </td>
+                                <td class="px-4 py-1 whitespace-nowrap">
+                                    <span class="bg-red-100 text-red-300 py-1 px-1 rounded">Cancel Student 12</span>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <a href="#"><i class="fa-solid fa-ellipsis-vertical text-gray-600 pr-3"></i></a>
+                                    <button class="bg-blue-500 text-white py-1 px-2 transition-all hover:bg-yellow-500 rounded-full">+</button>
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <span class="bg-gray-300 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="bg-green-500 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Sun 05 Jun 2022</div>
+                                    <div>Sun 05 Jun 2022</div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Am 10.30</div>
+                                    <div>Am 10.30</div>
+                                </td>
+                                <td class="px-3 py-1 whitespace-nowrap"><div class="border-2 border-blue-300 rounded text-center  px-1 py-1">Sara Hagar</div></td>
+                                <td class="px-3 py-1 whitespace-nowrap">
+                                    <span class="bg-purple-200 text-purple-600 py-1 px-6 rounded"></span>
+                                    <span class="text-xl">|</span>
+                                    <button><a href="#"><i class="fa-solid fa-video text-white bg-blue-500 px-2 py-1 rounded-md"></i></a></button>
+                                </td>
+                                <td class="px-4 py-1 whitespace-nowrap">
+                                    <span class="bg-purple-100 text-blue-300 py-1 px-1 rounded">Absent Teacher 13</span>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <a href="#"><i class="fa-solid fa-ellipsis-vertical text-gray-600 pr-3"></i></a>
+                                    <button class="bg-blue-500 text-white py-1 px-2 transition-all hover:bg-yellow-500 rounded-full">+</button>
+                                </td>
+                            </tr>
+                            
+                         </div>
+                         <div>
+                            <tr class="border-b">
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <span class="bg-green-500 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="bg-gray-300 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Sun 05 Jun 2022</div>
+                                    <div>Sun 05 Jun 2022</div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Am 10.30</div>
+                                    <div>Am 10.30</div>
+                                </td>
+                                <td class="px-3 py-1 whitespace-nowrap"><div class="border-2 border-blue-300 rounded text-center  px-1 py-1">Reham Hagar</div></td>
+                                <td class="px-3 py-1 whitespace-nowrap">
+                                    <span class="bg-blue-200 text-blue-600 py-1 px-6 rounded"></span>
+                                    <span class="text-xl">|</span>
+                                    <button><a href="#"><i class="fa-solid fa-video text-white bg-blue-500 px-2 py-1 rounded-md"></i></a></button>
+                                </td>
+                                <td class="px-4 py-1 whitespace-nowrap">
+                                    <span class="bg-green-100 text-green-300 py-1 px-8 rounded">Attended</span>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <a href="#"><i class="fa-solid fa-ellipsis-vertical text-gray-600 pr-3"></i></a>
+                                    <button class="bg-blue-500 text-white py-1 px-2 transition-all hover:bg-yellow-500 rounded-full">+</button>
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <span class="bg-white border-2 border-gray-500 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="bg-green-500 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Sun 05 Jun 2022</div>
+                                    <div>Sun 05 Jun 2022</div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Am 10.30</div>
+                                    <div>Am 10.30</div>
+                                </td>
+                                <td class="px-3 py-1 whitespace-nowrap"><div class="border-2 border-blue-300 rounded text-center  px-1 py-1">Hagar Hagar</div></td>
+                                <td class="px-3 py-1 whitespace-nowrap">
+                                    <span class="bg-red-100 text-blue-600 py-1 px-6 rounded"></span>
+                                    <span class="text-xl">|</span>
+                                    <button><a href="#"><i class="fa-solid fa-video text-white bg-blue-500 px-2 py-1 rounded-md"></i></a></button>
+                                </td>
+                                <td class="px-4 py-1 whitespace-nowrap">
+                                    <span class="bg-red-100 text-red-300 py-1 px-1 rounded">Cancel Student 12</span>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <a href="#"><i class="fa-solid fa-ellipsis-vertical text-gray-600 pr-3"></i></a>
+                                    <button class="bg-blue-500 text-white py-1 px-2 transition-all hover:bg-yellow-500 rounded-full">+</button>
+                                </td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div class="flex items-center">
+                                        <span class="bg-gray-300 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <span class="bg-green-500 h-2 w-2 rounded-full mr-2"></span>
+                                        <span>saasraa yahyaa mohamed</span>
+                                    </div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Sun 05 Jun 2022</div>
+                                    <div>Sun 05 Jun 2022</div>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <div>Am 10.30</div>
+                                    <div>Am 10.30</div>
+                                </td>
+                                <td class="px-3 py-1 whitespace-nowrap"><div class="border-2 border-blue-300 rounded text-center  px-1 py-1">Sara Hagar</div></td>
+                                <td class="px-3 py-1 whitespace-nowrap">
+                                    <span class="bg-purple-200 text-purple-600 py-1 px-6 rounded"></span>
+                                    <span class="text-xl">|</span>
+                                    <button><a href="#"><i class="fa-solid fa-video text-white bg-blue-500 px-2 py-1 rounded-md"></i></a></button>
+                                </td>
+                                <td class="px-4 py-1 whitespace-nowrap">
+                                    <span class="bg-purple-100 text-blue-300 py-1 px-1 rounded">Absent Teacher 13</span>
+                                </td>
+                                <td class="px-6 py-1 whitespace-nowrap">
+                                    <a href="#"><i class="fa-solid fa-ellipsis-vertical text-gray-600 pr-3"></i></a>
+                                    <button class="bg-blue-500 text-white py-1 px-2 transition-all hover:bg-yellow-500 rounded-full">+</button>
+                                </td>
+                            </tr>
+                            
+                         </div>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+        
+</body>
